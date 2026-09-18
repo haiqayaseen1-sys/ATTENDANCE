@@ -5,7 +5,7 @@
 
 ### Functional Requirements
 
-#### FR-01: Send Commands
+#### FR-01: Send Commands 
 Mission Control shall send movement commands to the rover.
 
 #### FR-02: Execute Valid Commands
