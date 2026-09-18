@@ -14,8 +14,8 @@ The rover shall receive and execute valid commands from Mission Control.
 #### FR-03: Report Rover Status
 The rover shall report its current position, battery level, temperature, and communication status.
 
-#### FR-04: Safe Mode
-The rover shall enter Safe Mode when a critical battery or thermal condition is detected.
+#### FR-04: Emergency Safety
+The rover shall enter Safe Mode within 3 seconds when battery temperature exceeds the critical threshold or battery capacity falls below the defined emergency level.
 
 #### FR-05: Command Execution Status
 Mission Control shall receive the status of command execution.
@@ -37,9 +37,9 @@ Command processing should normally complete within 5 seconds after a command is 
 #### NFR-02: Security
 Only authenticated Mission Control operators shall be permitted to issue rover commands.
 
-#### NFR-03: Reliability
+ #### NFR-03: Reliability
 The system shall continue operating despite temporary communication interruptions.
 
-#### NFR-04: Scalability
-The system should support communication with multiple rovers simultaneously.
+#### NFR-04: Mission Expansion
+The system shall support at least 20 simultaneously connected rovers.
 
